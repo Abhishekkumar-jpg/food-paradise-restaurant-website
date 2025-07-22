@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO Meta Tags Links -->
+    <meta name="description" content="The Paradise of Food is a haunting and visceral novel that explores the life of a middle-class
+                        Muslim family over fifty years. Written in Urdu and translated into English by Baran Farooqi,
+                        the book delves into themes of identity, decay, and desire through the lens of food and domestic
+                        life. The kitchen becomes a symbolic battleground, where memories, rituals, and relationships
+                        simmer alongside pots of curry and incense smoke.">
+    <meta name="keywords" content="About,Menu,Service,Contact">
+    <meta name="robots" content="index, follow">
+    <!-- Css file link -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- Bootstrap Css Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Css-favicon-link -->
+    <link rel="shortcut icon" href="/images/93847_1582008265-removebg-preview.png" type="image/x-icon">
+    <!--AOS css link-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Title of the project -->
+    <title>Food Paradise Website</title>
+</head>
+
+<body>
+
+    <!-- Navbar-section -->
+    <nav class="navbar navbar-expand-lg navbar-light container-fluid shadow p-4 mb-0 fixed-top bg-light rounded">
+        <div class="container">
+            <h1 class="fs-2 fw-bold" id="navbar-h1"> Food <span class="text-warning">Paradise</span></h1>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobile-menu"
+                aria-controls="mobile-menu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#menu">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <form class="d-flex"> 
+                    <button class="nav-btn" type="submit"><a href="/Book-your-table.html" class="text-decoration-none text-white">Book Your Table</a></button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Offcanvas-mobile-menu-section -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="mobile-menu" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h1 class="fs-3 fw-bold" id="navbar-h1-offcanvas">Food <span class="text-warning">Paradise</span></h1>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="dropdown mt-3">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Log Out</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Settings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Privacy & Conditions</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Home-section -->
+    <div class="header-container container-fluid p-0">
+        <div class="header-section container">
+            <div class="row d-flex align-items-center justify-content-between">
+                <div class="col-md-6">
+                    <h1 class="display-5">Enjoy Your <span class="text-warning display-4 fw-bold">Delicious
+                            Food</span><span class="d-none d-md-block display-4 fw-bold text-warning food-class"><span
+                                class="fs-1 text-white food-span"> With </span>
+                            Food Paradise</span></h1>
+                    <p>
+                        The Paradise of Food is a haunting and visceral novel that explores the life of a middle-class
+                        Muslim family over fifty years. Written in Urdu and translated into English by Baran Farooqi,
+                        the book delves into themes of identity, decay, and desire through the lens of food and domestic
+                        life. The kitchen becomes a symbolic battleground, where memories, rituals, and relationships
+                        simmer alongside pots of curry and incense smoke. <span>Jawed’s narrative is rich with grotesque
+                            imagery and emotional depth, portraying food not just as sustenance but as a complex
+                            interplay of
+                            culture, memory, and identity.</span>
+                    </p>
+                    <button class="header-btn">Order Now</button>
+                </div>
+                <div class="col-md-6 d-none d-md-none d-lg-block">
+                    <img src="/images/istockphoto-1189709277-612x612-removebg-preview.png" alt="header-section-image"
+                        id="header-section-image">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Speciality-section -->
+    <div class="container-fluid bg-light p-4" data-aos="fade-in">
+        <div class="container speciality-container">
+            <h2 class="text-center mb-4 text-dark">Our <span class="text-warning">Special</span> Dishes</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200" data-aos-easing="ease-in-out">
+                    <div class="card">
+                        <img src="/images/chow-mein-fun-done.png" class="card-img-top img-fluid" alt="Dish 1"
+                            height="265">
+                        <div class="card-body">
+                            <h5 class="card-title"><span class="card-title-span">Spicy</span> Shingapuri Noodles</h5>
+                            <p class="card-text">A flavorful and spicy noodle dish made in traditional spices and
+                                herbs.</p>
+
+                            <button class="card-btn btn-warning">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300" data-aos-easing="ease-in-out">
+                    <div class="card">
+                        <img src="/images/wp3645690.jpg" class="card-img-top img-fluid" alt="Dish 2" height="265">
+                        <div class="card-body">
+                            <h5 class="card-title"><span class="card-title-span">Vegetable </span>Canadian Tacos</h5>
+                            <p class="card-text">A fragrant and aromatic dish made with fresh vegetables and spices.</p>
+                            <button class="card-btn btn-warning">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="400" data-aos-easing="ease-in-out">
+                    <div class="card">
+                        <img src="/images/image-358.png" class="card-img-top img-fluid" alt="Dish 3" height="265">
+                        <div class="card-body">
+                            <h5 class="card-title">Paneer Tikka</h5>
+                            <p class="card-text">Grilled paneer marinated in spices, served with mint chutney.</p>
+                            <button class="card-btn btn-warning">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About-section -->
+    <div class="container-fluid about-container" id="about" data-aos="fade-in">
+        <div class="about-content container p-5">
+            <div class="row about-section ">
+                <div class="col-md-6 about-details" data-aos="fade-up" data-aos-delay="200"
+                    data-aos-easing="ease-in-out">
+                    <h2 class="display-5 text-warning fw-bold">About <span class="text-light" id="about-us">Us</span>
+                    </h2>
+                    <p>Welcome to Food Paradise, where we offer a culinary journey through the rich and diverse flavors
+                        of our world. Our passion for food is evident in every dish we create, using only the freshest
+                        ingredients and authentic recipes. Are you trying towords come up with a catchy slogan for your
+                        restaurant? Then you’ve come to the right place. In this article, we’ve collected restaurant
+                        slogans and tag lines that can accompany your restaurant name and brand.</p>
+                    <span class="d-none d-md-block" id="about-span">Join us on this culinary adventure and experience
+                        the flavors of Food Paradise. Our passion
+                        for food is evident in every dish we create, using only the freshest ingredients and authentic
+                        recipes.</span>
+                    <button class="about-btn d-block"> Read More</button>
+                </div>
+                <div class="col-md-6 about-image d-none d-md-none d-lg-block" data-aos="fade-up" data-aos-delay="400"
+                    data-aos-easing="ease-in-out">
+                    <img src="/images/AugustEs_2018_MiguelLecuona_9_8c03947d-5ea4-4bfe-8073-49f5fce52fd6.jpg"
+                        alt="About Us" class="img-fluid ">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Menu-section -->
+    <div class="container" id="menu" data-aos="fade-in">
+        <div class="menu-section">
+            <h2 class="text-center mb-4 text-dark">Explore <span class="text-warning">Our</span> Menu</h2>
+            <p class="text-center mb-4 menu-p">Explore our diverse menu featuring a wide range of dishes from around the
+                world. Each dish is crafted with care and passion, ensuring a delightful dining experience.</p>
+            <div class="menu-content w-100 h-auto d-flex justify-content-around flex-wrap">
+                <div class="row" id="menu-row-1">
+                    <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200" data-aos-easing="ease-in-out">
+                        <div class="card">
+                            <img src="/images/AST_1729.jpg" class="card-img-top img-fluid" alt="Menu Item 1"
+                                height="265">
+                            <div class="card-body">
+                                <h5 class="card-title-2"><span class="card-title-span">Spicy</span> Maxican Taccos
+                                </h5>
+                                <p class="card-text-2">A flavorful and spicy noodle dish traditional spices and
+                                    herbs.</p>
+                                <button class="menu-btn btn-warning">Order Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300" data-aos-easing="ease-in-out">
+                        <div class="card">
+                            <img src="/images/OIP.webp" class="card-img-top img-fluid" alt="Menu Item 2" height="265">
+                            <div class="card-body">
+                                <h5 class="card-title-2"><span class="card-title-span">Vegetable </span> American Burgur
+                                </h5>
+                                <p class="card-text-2">A fragrant and aromatic dish made with fresh vegetables and
+                                    spices.
+                                </p>
+                                <button class="menu-btn btn-warning">Order Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="400" data-aos-easing="ease-in-out">
+                        <div class="card">
+                            <img src="/images/OIP (1).webp" class="card-img-top img-fluid" alt="Menu Item 3"
+                                height="265">
+                            <div class="card-body">
+                                <h5 class="card-title-2">Japnese style Sushi</h5>
+                                <p class="card-text-2">Grilled paneer marinated in spices, and it served with mint
+                                    chutney.</p>
+                                <button class="menu-btn btn-warning">Order Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="500" data-aos-easing="ease-in-out">
+                        <div class="card">
+                            <img src="/images/OIP(3).jpg" class="card-img-top img-fluid" alt="Menu Item 4" height="265">
+                            <div class="card-body">
+                                <h5 class="card-title-2"><span class="card-title-span">Spicy</span> Barbigue chicken
+                                </h5>
+                                <p class="card-text-2">A flavorful and spicy noodle dish traditional spices and
+                                    herbs.</p>
+                                <button class="menu-btn btn-warning">Order Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="600" data-aos-easing="ease-in-out">
+                        <div class="card">
+                            <img src="/images/OIP(4).jpg" class="card-img-top img-fluid" alt="Menu Item 5" height="265">
+                            <div class="card-body">
+                                <h5 class="card-title-2"><span class="card-title-span"> Sapgati</span> Berry Breads
+                                </h5>
+                                <p class="card-text-2">A fragrant and aromatic dish made with fresh vegetables and
+                                    spices
+                                </p>
+                                <button class="menu-btn btn-warning">Order Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="700" data-aos-easing="ease-in-out">
+                        <div class="card">
+                            <img src="/images/OIP (5).webp" class="card-img-top img-fluid" alt="Menu Item 6"
+                                height="265">
+                            <div class="card-body">
+                                <h5 class="card-title-2">Thai Salaid</h5>
+                                <p class="card-text-2">Grilled paneer marinated in spices, always it served with mint
+                                    chutney.</p>
+                                <button class="menu-btn btn-warning">Order Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services-section -->
+    <div class="services-container container mt-3 d-none d-md-none d-lg-block" id="services" data-aos="fade-in">
+        <h2 class="fs-2 fw-bold text-center">Our <span class="text-warning">Additional </span>Services</h2>
+        <p id="service-p">Relax in a warm, inviting ambiance with top-notch hospitality. Perfect for family dinners,
+            date nights, or
+            casual meetups. Enjoy freshly prepared meals served with care and style.</p>
+        <div class="row">
+            <div class="col-md-4" id="sercives-content" data-aos="fade-up" data-aos-delay="200"
+                data-aos-easing="ease-in-out">
+                <div class="services-content-1 mb-5 mt-4">
+                    <h2>1. Dine-In Experience</h2>
+                    <p>Enjoy a cozy and welcoming atmosphere where guests can savor freshly prepared meals in a
+                        beautifully designed dining space.</p>
+                </div>
+                <div class="services-content-2 mb-5 mt-4">
+                    <h2>2. Home Delivery</h2>
+                    <p>Get your favorite dishes delivered straight to your doorstep with our fast and reliable home
+                        delivery service and with favoules experience.</p>
+                </div>
+                <div class="services-content-3 mb-4 mt-4">
+                    <h2>3. Takeaway Service</h2>
+                    <p>For those on the go, our takeaway service offers a quick and convenient way to enjoy delicious
+                        meals. Simply place your order, pick it up.</p>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="400" data-aos-easing="ease-in-out">
+                <div class="services-image">
+                    <img src="/images/A Female Customer Service Person Holding Documents Appeared From The Phone 3D Illustration (AI style).png"
+                        alt="services-images" width="450px" height="550px">
+                </div>
+            </div>
+            <div class="col-md-4" id="sercives-about" data-aos="fade-up" data-aos-delay="200"
+                data-aos-easing="ease-in-out">
+                <div class="services-content-4 mb-5 mt-4">
+                    <h2>4. Catering for Events</h2>
+                    <p>Make your events unforgettable with our professional catering services. From weddings to
+                        corporate gatherings, we offer customized menus.</p>
+                </div>
+                <div class="services-content-5 mb-5 mt-4">
+                    <h2>5. Live Cooking Stations</h2>
+                    <p>Add excitement to your dining experience with our live cooking stations, where chefs prepare
+                        meals right before your eyes.</p>
+                </div>
+                <div class="services-content-6 mb-4 mt-4">
+                    <h2>6. Custom Orders & Special Menus</h2>
+                    <p>Whether you have dietary preferences or want something unique, our custom order service lets you
+                        personalize your meal.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact-section -->
+    <div class="contact-section mt-4 container-fluid  mt-5" id="contact" data-aos="fade-in">
+        <div class="contact-about container">
+            <div class="row">
+                <div class="col-md-6" id="contact-detail" data-aos="fade-up" data-aos-delay="200"
+                    data-aos-easing="ease-in-out">
+                    <h2 class="display-5 text-white"><span class="text-warning"> Contact</span> us</h2>
+                    <p>Whether you have a question, need support, or just want to share your thoughts, reaching out is
+                        easy
+                        and welcomed. You can get in touch with our friendly team via email, phone, or through the
+                        contact
+                        form on our website. We strive to respond promptly and ensure your experience is smooth and
+                        satisfying.</p>
+                </div>
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="400" data-aos-easing="ease-in-out">
+                    <div class="contact-card mt-5 mb-5">
+                        <form action="https://formspree.io/f/xldlgywn" method="POST">
+                            <div class="contact-name d-lg-flex justify-content-around">
+                                <div class="f-name">
+                                    <label for="#">First name</label><br>
+                                    <input type="text" name="First name" required>
+                                </div>
+                                <br>
+                                <div class="l-name d-none d-lg-block">
+                                    <label for="#">Last name</label><br>
+                                    <input type="text" name="Last name" required>
+                                </div>
+                            </div>
+                            <div class="email">
+                                <label for="#">Email</label><br>
+                                <input type="email" name="Email" required>
+                            </div>
+                            <div class="phone">
+                                <label for="#">Phone number</label><br>
+                                <input type="number" name="Phone number" required>
+                            </div>
+                            <div class="suggestion">
+                                <label for="#">Any Suggestion</label><br>
+                                <textarea id="suggest" name="Message"></textarea>
+                            </div>
+                            <button class="contact-btn" type="submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer-section -->
+    <footer class="footer-custom text-light pt-5 mt-5" data-aos="fade-in">
+        <div class="container" data-aos="fade-up" data-aos-delay="200" data-aos-easing="ease-in-out">
+            <div class="row gy-5">
+
+                <!-- Company Info -->
+                <div class="col-md-3">
+                    <h1 class="fs-3 fw-bold ms-0" id="navbar-h1-offcanvas">Food <span
+                            class="text-warning">Paradise</span></h1>
+                    <p>Empowering innovation through design, tech, and strategy. We're a team of dreamers, coders, and
+                        creators.</p>
+                </div>
+
+                <!-- Navigation Links -->
+                <div class="col-md-2">
+                    <h5>Explore</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="footer-link">Home</a></li>
+                        <li><a href="#" class="footer-link">About</a></li>
+                        <li><a href="#" class="footer-link">Menu</a></li>
+                        <li><a href="#" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div class="col-md-2">
+                    <h5>Services</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="footer-link">Home Delivery</a></li>
+                        <li><a href="#" class="footer-link">Live Cooking Stations</a></li>
+                        <li><a href="#" class="footer-link"> Catering for Events</a></li>
+                        <li><a href="#" class="footer-link">Takeaway Service</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="col-md-3">
+                    <h5>Join Our Newsletter</h5>
+                    <form>
+                        <input type="email" class="form-control mb-2" placeholder="Your email" />
+                        <button type="submit" class="btn btn-warning w-100" id="footer-btn">Subscribe</button>
+                    </form>
+                    <small class="text-muted">Get updates and insights every week.</small>
+                </div>
+
+                <!-- Social + Contact -->
+                <div class="col-md-2">
+                    <h5>Connect</h5>
+                    <p>Email: food@paradise.com<br>Phone: +91-98765-43210</p>
+                    <div class="d-flex gap-2">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Mini Blog Snippet -->
+            <div class="mt-5">
+                <h6 class="text-warning">From Our Speciality</h6>
+                <p><strong>"Design Beyond Pixels"</strong> – Discover the mindset shifts that elevate your creative
+                    workflow. <a href="#" class="footer-link">Read more →</a></p>
+            </div>
+
+            <!-- Bottom Section -->
+            <div class="text-center mt-4 pt-3 border-top border-secondary">
+                <p class="mb-1">&copy; 2025 Foodparadise. Built with 💛 from India.</p>
+                <a href="#" class="footer-link me-3">Privacy Policy</a>
+                <a href="#" class="footer-link pb-3">Design and Developed by Abhishek kumar</a>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap Js link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!--AOS js link-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- Js file link -->
+    <script src="/Js/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Table Booking</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            background: linear-gradient(to top,
+                    rgba(0, 0, 0, 0.5) 50%,
+                    rgba(0, 0, 0, 0.5) 50%),
+                url(https://plus.unsplash.com/premium_photo-1673108852141-e8c3c22a4a22?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Zm9vZHxlbnwwfHwwfHx8MA%3D%3D);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100%;
+            overflow-y: hidden;
+        }
+
+        .booking-table-section {
+            width: 75%;
+            height: 46rem;
+            position: relative;
+            top: 30px;
+            left: 200px;
+        }
+
+        .booking-table-section h1 {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-transform: capitalize;
+            text-align: center;
+            font-size: 40px;
+            margin: 10px 0;
+            color: #ffffff;
+        }
+
+        span {
+            color: orange;
+        }
+
+        .booking-table-section p {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-transform: capitalize;
+            text-align: center;
+            font-size: larger;
+            margin: 20px 0;
+            font-weight: bold;
+            color: #ffffff;
+        }
+
+        table {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-transform: capitalize;
+            border-collapse: collapse;
+            width: 100%;
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+
+        .table-heading {
+            padding: 20px;
+            margin: 10px;
+        }
+
+        td {
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+            padding: 20px 15px;
+            font-weight: bold;
+            font-size: large;
+
+        }
+
+        th {
+            text-align: center;
+            padding: 20px 15px;
+            font-size: large;
+        }
+
+        tr:nth-child(even) {
+            background-color: white;
+        }
+
+        tr:nth-child(odd) {
+            background-color: white;
+        }
+
+        td button {
+            width: 130px;
+            height: 35px;
+            background-color: transparent;
+            color: green;
+            font-family: Georgia, "Times New Roman", Times, serif;
+            font-weight: bold;
+            border: 3px solid green;
+            border-radius: 10px;
+            cursor: pointer;
+            text-transform: capitalize;
+        }
+
+        .clicked-button {
+            border-color: red;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Table-Booking-section -->
+    <div class="booking-table-section">
+        <h1>Book <span> your Table</span></h1>
+        <p>Table ready when you are—let’s make it special</p>
+        <div class="table-heading">
+            <table>
+                <tr>
+                    <th>Event Name</th>
+                    <th>Event Date</th>
+                    <th>Total Seats</th>
+                    <th>Seats Available</th>
+                    <th>Booking Status</th>
+                </tr>
+                <tr>
+                    <td>Dance Program</td>
+                    <td>22/07/2025</td>
+                    <td>30</td>
+                    <td>22</td>
+                    <td><button class="btn-section">Book Now</button></td>
+                </tr>
+                <tr>
+                    <td>Singing Program</td>
+                    <td>15/05/2025</td>
+                    <td>21</td>
+                    <td>13</td>
+                    <td><button class="btn-section">Book Now</button></td>
+                </tr>
+                <tr>
+                    <td>Designing Program</td>
+                    <td>9/07/2025</td>
+                    <td>19</td>
+                    <td>9</td>
+                    <td><button class="btn-section">Book Now</button></td>
+                </tr>
+                <tr>
+                    <td>Go Kart Program</td>
+                    <td>2/06/2025</td>
+                    <td>17</td>
+                    <td>12</td>
+                    <td><button class="btn-section">Book Now</button></td>
+                </tr>
+                <tr>
+                    <td>Music Program</td>
+                    <td>29/07/2025</td>
+                    <td>25</td>
+                    <td>20</td>
+                    <td><button class="btn-section">Book Now</button></td>
+                </tr>
+                <tr>
+                    <td>Crafting Program</td>
+                    <td>5/08/2025</td>
+                    <td>12</td>
+                    <td>3</td>
+                    <td><button class="btn-section">Book Now</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script>
+        // Table-section-button
+        let orderButtons = document.getElementsByTagName("button");
+        for (let button of orderButtons) {
+            button.addEventListener("click", () => {
+                if (button.classList.contains("clicked-button")) {
+                    button.classList.remove("clicked-button");
+                    button.innerHTML = "Book Now"
+                } else {
+                    button.classList.add("clicked-button");
+                    button.innerHTML = "cancel"
+                }
+            });
+        }
+        //  Rondom-number-button
+        function setRandomSeatsAvailable() {
+            const rows = document.querySelectorAll("table tr");
+            for (let i = 1; i < rows.length; i++) {
+                const totalSeats = parseInt(rows[i].children[2].textContent);
+                const randomSeats = Math.floor(Math.random() * (totalSeats + 1));
+                rows[i].children[3].textContent = randomSeats;
+            }
+        }
+
+        window.onload = setRandomSeatsAvailable;
+
+    </script>
+</body>
+
+</html>
